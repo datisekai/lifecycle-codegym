@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import ClockHook from "./ClockHook";
 
 const ManagerHs = () => {
   const [students, setStudents] = useState([]);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+
+  console.log(ClockHook());
 
   const handleAdd = () => {
     setStudents([...students, { id: students.length, name, phone, email }]);
@@ -68,7 +71,7 @@ const ManagerHs = () => {
               Add
             </button>
           </div>
-          <table class="table">
+          <table className="table">
             <thead>
               <tr>
                 <th scope="col">Name</th>
