@@ -6,6 +6,10 @@ import ManagerHs from './components/ManagerHs';
 import FormLienHe from './components/FormLienHe';
 import ManagerLib from './components/ManagerLib';
 import FormEmail from './components/FormEmail';
+import { Route, Routes } from 'react-router-dom';
+import Login from './components/Login';
+import Home from './components/Home';
+import Employee from './components/Employee';
 
 function App() {
   return (
@@ -14,7 +18,12 @@ function App() {
     {/* <Form/> */}
     {/* <ManagerHs/> */}
     {/* <FormLienHe/> */}
-    <FormEmail/>
+    {/* <FormEmail/> */}
+    <Routes>
+      <Route path='/login' element={<Login/>}></Route>
+      <Route path='/home' element={<Home/>}></Route>
+      <Route path='/employee' element={<Employee/>}></Route>
+    </Routes>
     </div>
   );
 }
