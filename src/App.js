@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import KeyPress from './components/KeyPress';
+import Form from './components/Form';
+import ManagerHs from './components/ManagerHs';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {/* <KeyPress/> */}
+    {/* <Form/> */}
+    <ManagerHs/>
     </div>
   );
 }
